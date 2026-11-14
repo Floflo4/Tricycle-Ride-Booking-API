@@ -2,7 +2,6 @@ from flask import Flask
 
 from get_rides import register_get_routes
 from create_ride import register_create_route
-from manage_ride import register_manage_routes
 
 app = Flask(__name__)
 
@@ -21,7 +20,6 @@ rides = [
 # Register routes from the other Python files
 register_get_routes(app, rides)
 register_create_route(app, rides)
-register_manage_routes(app, rides)
 
 
 @app.route("/")
@@ -31,12 +29,10 @@ def home():
         "endpoints": [
             "GET /api/rides",
             "GET /api/rides/<id>",
-            "POST /api/rides",
-            "PUT /api/rides/<id>",
-            "DELETE /api/rides/<id>"
+            "POST /api/rides"
         ]
     }, 200
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
