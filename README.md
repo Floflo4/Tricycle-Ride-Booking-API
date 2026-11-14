@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Tricycle Ride Booking API
 
 ## Project Description
