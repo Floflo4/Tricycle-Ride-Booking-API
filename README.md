@@ -51,6 +51,3 @@ http://127.0.0.1:5000
 2. Domanaise, Jerald
 3. Garcia, Robert John
 4. Sibal, Florence
-=======
-# Tricycle-Ride-Booking-API
->>>>>>> 6dff769a758ff9e0d090d0058a0c54d06a449fae
